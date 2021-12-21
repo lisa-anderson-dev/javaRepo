@@ -14,16 +14,16 @@ public class DigitSum {
 				char[] charArr = input.toCharArray();
 				for (int i = 0; i < charArr.length; i++) {
 					int digit = Character.getNumericValue(charArr[i]);
+					//int digit = Integer.parseInt(String.valueOf(charArr[i]));
 					sum += digit;
 				}
 				System.out.println("The sum of the digits is " + sum);
 				break;
 			}
 			else {
-				System.out.println("Invalid input - only 4-digit numbers allowed!");
+				System.out.println("Invalid input - only 4-digit numbers are allowed.");
 				System.out.println("Please try again.\n");
 			}
 		}
-
 	}
 }
