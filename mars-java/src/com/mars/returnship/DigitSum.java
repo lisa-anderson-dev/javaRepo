@@ -12,9 +12,11 @@ public class DigitSum {
 			if (input.length() == 4) {
 				int sum = 0;
 				char[] charArr = input.toCharArray();
-				for (int i = 0; i < charArr.length; i++) {
-					int digit = Character.getNumericValue(charArr[i]);
+				for (char digitChar : charArr) {
+				//for (int i = 0; i < charArr.length; i++) {
+					//int digit = Character.getNumericValue(charArr[i]);
 					//int digit = Integer.parseInt(String.valueOf(charArr[i]));
+					int digit = Character.getNumericValue(digitChar);
 					sum += digit;
 				}
 				System.out.println("The sum of the digits is " + sum);
