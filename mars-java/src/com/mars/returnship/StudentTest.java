@@ -13,7 +13,7 @@ public class StudentTest {
 		
 		/* 
 		 * The add() method of Set only adds the specified element e to the set if the set contains no element e2 such that (e==null ? e2==null : e.equals(e2))
-		 * The default implementation of equals() performs shallow comparison and only checks if both object references point to the same memory location.  In this case, stud3 and stud4 reside in two different locations and hence are NOT equal.  
+		 * The default implementation of equals() performs a shallow comparison and only checks if both object references point to the same memory location.  In this case, stud3 and stud4 reside in two different locations and hence are NOT equal.  
 		 * To prevent duplicate elements from getting added to the set, we need equals() to perform to a deep comparison, or a comparison of the object contents
 		 * Modifying equals() will necessitate changing hashCode() as well.
 		 * */
