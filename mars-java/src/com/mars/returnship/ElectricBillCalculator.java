@@ -21,6 +21,7 @@ public class ElectricBillCalculator {
 			ElectricBill bill = new ElectricBill(Integer.parseInt(inputArr[0].trim()), inputArr[1].trim(), Integer.parseInt(inputArr[2].trim()));
 			billArr[i] = bill;
 		}
+		sc.close();
 		System.out.println();
 		System.out.println("-".repeat(114) + "\n");
 		printBillingReport(billArr);
