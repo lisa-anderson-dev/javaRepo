@@ -29,7 +29,7 @@ public class StudentTest {
 		}
 		
 		// After overriding equals() and hashCode(), both stud3 and stud4 should be equal and have the same hash code
-				System.out.println("\nEQUALS? - " + stud3.equals(stud4));		// => TRUE
-				System.out.println("SAME HASH? - " + (stud3.hashCode() == stud4.hashCode()));		// => TRUE
+		System.out.println("\nEQUALS? - " + stud3.equals(stud4));		// => TRUE
+		System.out.println("SAME HASH? - " + (stud3.hashCode() == stud4.hashCode()));		// => TRUE
 	}
 }
