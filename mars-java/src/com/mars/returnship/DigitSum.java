@@ -5,9 +5,9 @@ import java.util.*;
 public class DigitSum {
 
 	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 		while (true) {
 			System.out.print("Enter a 4-digit number: ");
-			Scanner sc = new Scanner(System.in);
 			String input = sc.next();
 			if (input.length() == 4) {
 				int sum = 0;
@@ -27,5 +27,6 @@ public class DigitSum {
 				System.out.println("Please try again.\n");
 			}
 		}
+		sc.close();
 	}
 }

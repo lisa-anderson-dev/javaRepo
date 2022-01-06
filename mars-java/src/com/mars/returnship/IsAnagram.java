@@ -5,8 +5,8 @@ import java.util.*;
 public class IsAnagram {
 
 	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 		while (true) {
-			Scanner sc = new Scanner(System.in);
 			System.out.println("Please enter two strings or 'q' to exit");
 			System.out.print("String 1: ");
 			String input1 = sc.nextLine();
@@ -29,6 +29,7 @@ public class IsAnagram {
 				}
 			}
 		}
+		sc.close();
 	}
 	public static boolean checkAnagram(String string1, String string2) {
 		String[] string1Arr = string1.toLowerCase().split("");
